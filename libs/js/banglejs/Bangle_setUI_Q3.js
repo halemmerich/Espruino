@@ -143,4 +143,9 @@
     if (Bangle.touchHandler)
       Bangle.on("touch", Bangle.touchHandler);
   }
+  if (WIDGETS) {
+    for (let w of WIDGETS){
+      if(w.update)w.update();
+    }
+  }
 })

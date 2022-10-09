@@ -96,5 +96,10 @@
       }
     }},global.WIDGETS);
     if (redraw) Bangle.drawWidgets();
-  }  
+  }
+  if (WIDGETS) {
+    for (let w of WIDGETS){
+      if(w.update)w.update();
+    }
+  }
 })
