@@ -185,7 +185,7 @@
 #define NRF_SDH_CLOCK_LF_RC_CTIV 0
 // SoftDevice calibration timer interval under constant temperature.
 #define NRF_SDH_CLOCK_LF_RC_TEMP_CTIV 0
-#define NRF_SDH_CLOCK_LF_ACCURACY NRF_CLOCK_LF_ACCURACY_20_PPM
+#define NRF_SDH_CLOCK_LF_ACCURACY NRF_CLOCK_LF_ACCURACY_500_PPM
 #else // On internal oscillator
 #define NRF_SDH_CLOCK_LF_ACCURACY NRF_CLOCK_LF_ACCURACY_500_PPM
 #endif // ESPR_LSE_ENABLE
